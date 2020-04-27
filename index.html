@@ -1,0 +1,2501 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Bootstrap Documentation/practice</title>
+        <meta charset="UTF-8">
+        <meta view="display-port=intial, scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css" type="text/css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="row" id="header">
+                <nav class="navbar navbar-dark bg-dark col-lg-12 px-5 py-3">
+                    <h1 class="text-light">Bootstrap</h1>
+                    <button class="navbar-toggler text-light border-0 bg-secondary" type="button" data-toggle="collapse" data-target="#one" aria-controls="one" aria-expanded="false">A-D</button>
+                    <button class="navbar-toggler text-light border-0 bg-secondary" type="button" data-toggle="collapse" data-target="#two" aria-controls="two" aria-expanded="false">F-M</button>
+                    <button class="navbar-toggler text-light border-0 bg-secondary" type="button" data-toggle="collapse" data-target="#three" aria-controls="three" aria-expanded="false">N-T</button>
+                    <button class="navbar-toggler text-light border-0 bg-secondary mr-5" type="button" data-toggle="collapse" data-target="#four" aria-controls="four" aria-expanded="false">Utility</button>
+                    <ul class="collapse navbar-collapse text-light list-unstyled" id="one">
+                        <li><a href="#alerts">Alerts</a></li>
+                        <li><a href="#badges">Badges</a></li>
+                        <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                        <li><a href="#buttons">Buttons</a></li>
+                        <li><a href="#button-groups">Button Groups</a></li>
+                        <li><a href="#button-modifiers">Button Modifiers</a></li>
+                        <li><a href="#cards">Cards</a></li>
+                        <li><a href="#carousel">Carousel</a></li>
+                        <li><a href="#collapse">Collapse</a></li>
+                        <li><a href="#dropdowns">Dropdowns</a></li>
+                    </ul>
+                    <ul class="collapse navbar-collapse text-light list-unstyled" id="two">
+                        <li><a href="#forms">Forms</a></li>
+                        <li><a href="#form-input-groups">Form Input Groups</a></li>
+                        <li><a href="#custom-forms">Custom Forms</a></li>
+                        <li><a href="#grid">Grid</a></li>
+                        <li><a href="#images">Images</a></li>
+                        <li><a href="#jumbotron">Jumbotron</a></li>
+                        <li><a href="#list-group">List Group</a></li>
+                        <li><a href="#media-objects">Media Objects</a></li>
+                        <li><a href="#modal">Modal</a></li>
+                    </ul>
+                    <ul class="collapse navbar-collapse text-light list-unstyled" id="three">
+                        <li><a href="#navs">Navs</a></li>
+                        <li><a href="#navbar">Navbar</a></li>
+                        <li><a href="#pagination">Pagination</a></li>
+                        <li><a href="#popover">Popover</a></li>
+                        <li><a href="#progress">Progress</a></li>
+                        <li><a href="#scrollspy">Scrollspy</a></li>
+                        <li><a href="#spinner">Spinner</a></li>
+                        <li><a href="#tables">Tables</a></li>
+                        <li><a href="#toasts">Toasts</a></li>
+                        <li><a href="#tooltips">Tooltips</a></li>
+                        <li><a href="#typography">Typography</a></li>
+                    </ul>
+                    <ul class="collapse navbar-collapse text-light list-unstyled" id="four">
+                        <li><a href="#borders">Utility: Borders</a></li>
+                        <li><a href="#colours">Utility: Colours</a></li>
+                        <li><a href="#display">Utility: Display</a></li>
+                        <li><a href="#flexbox">Utility: Flexbox</a></li>
+                        <li><a href="#misc">Utility: Miscellaneous</a></li>
+                        <li><a href="#positioning">Utility: Positioning</a></li>
+                        <li><a href="#sizing">Utility: Sizing</a></li>
+                        <li><a href="#spacing">Utility: Spacing</a></li>
+                        <li><a href="#text">Utility: Text</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="btn-group-vertical btn-group-sm sticky-top float-right pt-5">
+                <a class="btn btn-secondary" href="#header">Top</a>
+                <a class="btn btn-secondary" href="#alerts">A-D</a>
+                <a class="btn btn-secondary" href="#forms">F-M</a>
+                <a class="btn btn-secondary" href="#navs">N-T</a>
+                <a class="btn btn-secondary" href="#borders">Utility</a>
+            </div>
+            <div class="row">
+                <main class="col-lg-12 p-5">
+                    <div id="alerts" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Alerts</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">All alert classes/elements will require the 'alert' class to apply the padding & style, followed by the 'alert-x' class to add the unique colour.</p>
+                            <div class="alert alert-primary" role="alert">
+                                <p><strong>Alert Primary.</strong> This alert uses the class 'alert-primary'.</p>
+                            </div>
+                            <div class="alert alert-secondary" role="alert">
+                                <p><strong>Alert Secondary.</strong> This alert uses the class 'alert-secondary'.</p>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                                <p><strong>Alert Success.</strong> This alert uses the class 'alert-success'.</p>
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                                <p><strong>Alert Info.</strong> This alert uses the class 'alert-info'.</p>
+                            </div>
+                            <div class="alert alert-warning" role="alert">
+                                <p><strong>Alert Warning.</strong> This alert uses the class 'alert-warning'.</p>
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                <p><strong>Alert Danger.</strong> This alert uses the class 'alert-danger'.</p>
+                            </div>
+                            <div class="alert alert-light" role="alert">
+                                <p><strong>Alert Light.</strong> This alert uses the class 'alert-light'.</p>
+                            </div>
+                            <div class="alert alert-dark" role="alert">
+                                <p><strong>Alert Dark.</strong> This alert uses the class 'alert-dark'.</p>
+                            </div>
+                            <div class="alert alert-danger" role="alert" id="alert-link">
+                                <strong>Alert Link.</strong>
+                                <a href="#alert-link" class="alert-link">This link uses the class 'alert-link'</a> and the container is using the class 'alert-danger', any alert class can be used for the container.
+                            </div>
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <button class="close" type="button" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <p><strong>Alert Dismissible</strong>This alert uses the class 'alert-dismissible' ontop of the class 'alert-warning' (any alert class will work), it can be dismissed by clicking on the 'x'. </p>
+                            </div>
+                            <div class="alert alert-success">
+                                <h4 class="alert-heading">Alert Heading</h4>
+                                <p>The above heading uses the class 'alert-heading'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="badges" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Badges</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">The 'badge' class adds the padding and style, whereas the 'badge-x' class will add the colour.</p>
+                            <h1>Heading 1 with badge <span class="badge badge-danger">Sale!</span></h1>
+                            <h2>Heading 2 with badge <span class="badge badge-danger">Sale!</span></h2>
+                            <h3>Heading 3 with badge <span class="badge badge-danger">Sale!</span></h3>
+                            <h4>Heading 4 with badge <span class="badge badge-danger">Sale!</span></h4>
+                            <h5>Heading 5 with badge <span class="badge badge-danger">Sale!</span></h5>
+                            <h6>Heading 6 with badge <span class="badge badge-danger">Sale!</span></h6>
+                            <span class="badge badge-pill badge-primary">Add class 'badge-pill' for round edges</span>
+                            <br>
+                            <br>
+                            <span class="badge badge-primary">badge-primary</span>
+                            <br>
+                            <br>
+                            <span class="badge badge-secondary">badge-secondary</span>
+                            <br>
+                            <br>
+                            <span class="badge badge-success">badge-success</span>
+                            <br>
+                            <br>
+                            <span class="badge badge-info">badge-info</span>
+                            <br>
+                            <br>
+                            <span class="badge badge-warning">badge-warning</span>
+                            <br>
+                            <br>
+                            <span class="badge badge-danger">badge-danger</span>
+                            <br>
+                            <br>
+                            <span class="badge badge-light">badge-light</span>
+                            <br>
+                            <br>
+                            <span class="badge badge-dark">badge-dark</span>
+                        </div>
+                    </div>
+                    <div id="breadcrumbs" class="col-lg-12 border rounded p-0 mb-5" id="breadcrumb">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Breadcrumbs</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">The breadcrumb classes use a structure of nav > ordered list > list item, the nav has an aria-label of 'breadcrumb', the ordered list has a class of 'breadcrumb' & the list item has a class of 'breadcrumb-item' with the class 'active' if it is the current/active page. The 'breadcrumb' class adds the padding & style for the overall box & the 'breadcrumb-item' adds the style for each breadcrumb.</p>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active">Home</li>
+                                </ol>
+                            </nav>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#breadcrumb">Home</a></li>
+                                    <li class="breadcrumb-item active">Library</li>
+                                </ol>
+                            </nav>
+                            <nav aria-label>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#breadcrumb">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#breadcrumb">Library</a></li>
+                                    <li class="breadcrumb-item active">About</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="buttons" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Buttons</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">The class 'btn' adds the padding & style of the button, and the 'btn-x' adds the colour. The class 'btn-outline-x' will add the colour to the border/outline instead of the background.</p>
+                            <button class="btn btn-primary">btn-primary</button>
+                            <button class="btn btn-secondary">btn-secondary</button>
+                            <button class="btn btn-success">btn-success</button>
+                            <button class="btn btn-info">btn-info</button>
+                            <button class="btn btn-warning">btn-warning</button>
+                            <button class="btn btn-danger">btn-danger</button>
+                            <button class="btn btn-light">btn-light</button>
+                            <button class="btn btn-dark">btn-dark</button>
+                            <button class="btn btn-link">btn-link</button>
+                            <br>
+                            <br>
+                            <button class="btn btn-outline-primary">btn-outline-primary</button>
+                            <button class="btn btn-outline-secondary">btn-outline-secondary</button>
+                            <button class="btn btn-outline-success">btn-outline-success</button>
+                            <button class="btn btn-outline-info">btn-outline-info</button>
+                            <button class="btn btn-outline-warning">btn-outline-warning</button>
+                            <button class="btn btn-outline-danger">btn-outline-danger</button>
+                            <button class="btn btn-outline-light">btn-outline-light</button>
+                            <button class="btn btn-outline-dark">btn-outline-dark</button>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <div id="button-groups" class="col-lg-12 border rounded p-0 mb-5" id="button-groups">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Button Groups</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">You can use the class 'btn-group' to group buttons together. Add '-lg' or '-sm' onto the end of the group class to change the size. 'btn-group-vertical' will change the button layout to a vertical position. You can also nest 'btn-group' by using 'btn-toolbar' or just by placing a 'btn-group' within another to add a dropdown menu.</p>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary">Left</button>
+                                <button type="button" class="btn btn-secondary">Middle</button>
+                                <button type="button" class="btn btn-secondary">Right</button>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary">Left Large</button>
+                                <button type="button" class="btn btn-secondary">Middle Large</button>
+                                <button type="button" class="btn btn-secondary">Right Large</button>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary">Left Small</button>
+                                <button type="button" class="btn btn-secondary">Middle Small</button>
+                                <button type="button" class="btn btn-secondary">Right Small</button>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary">Left</button>
+                                <button type="button" class="btn btn-secondary">Middle</button>
+                                <button type="button" class="btn btn-secondary">Right</button>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                <div class="btn-group" role="group" aria-label="First Group">
+                                    <button type="button" class="btn btn-secondary">1</button>
+                                    <button type="button" class="btn btn-secondary">2</button>
+                                    <button type="button" class="btn btn-secondary">3</button>
+                                </div>
+                                <div class="btn-group" role="group" aria-label="Secondary Group">
+                                    <button type="button" class="btn btn-secondary">4</button>
+                                    <button type="button" class="btn btn-secondary">5</button>
+                                </div>
+                                <div class="btn-group" role="group" aria-label="Thrid Group">
+                                    <button type="button" class="btn btn-secondary">6</button>
+                                    <button type="button" class="btn btn-secondary">7</button>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                <button class="btn btn-secondary">1</button>
+                                <button class="btn btn-secondary">2</button>
+
+                                <div class="btn-group" role="group">
+                                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <a class="dropdown-item" href="#button-groups">Dropdown option 1</a>
+                                        <a class="dropdown-item" href="#button-groups">Dropdown option 2</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="button-modifiers" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Button Modifiers</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">These are different types of modifiers that can alter and change the appearance or function of a button, they don't require the 'btn' or 'btn-x' style classes.</p>
+                            <button type="button" class="btn btn-primary btn-lg">btn-lg</button>
+                            <br>
+                            <br>
+                            <button type="button" class="btn btn-secondary btn-sm">btn-sm</button>
+                            <br>
+                            <br>
+                            <button type="button" class="btn btn-success btn-block">btn-block</button>
+                            <br>
+                            <button type="button" class="btn btn-info active">Active</button>
+                            <br>
+                            <br>
+                            <button type="button" class="btn btn-warning disabled">Disabled</button>
+                            <br>
+                            <br>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-info active">
+                                    <input type="checkbox" checked autocomplete="off"> Check
+                                </label>   
+                                <label class="btn btn-outline-warning">
+                                    <input type="checkbox" autocomplete="ogg"> Boxes
+                                </label>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-danger active">
+                                    <input type="radio" name="options" id="radio" autocomplete="off" checked> Radio
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="option" id="buttons" autocomplete="off"> Buttons
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cards" class="col-lg-12 border rounded p-0 mb-5" id="card">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Cards</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">Every card class/element will require a parent element with the class 'card', otherwise the styling will not be correctly applied.</p>
+                            <div class="card">
+                                <div class="card-body">
+                                    card-body
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">card-title</h4>
+                                    <h6 class="card-subtitle">card-subtitle</h6>
+                                    <p class="card-text">This p element uses the class 'card-text'.</p>
+                                    <a href="#card" class="card-link">card-link</a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <img class="card-img-top" src="card-img.png" alt="card-img-top" title="card-img-top">
+                                <div class="card-body">
+                                    You can use the classes 'card-img-top' & 'card-img-bottom' to place the image above and below text respectively.
+                                </div>
+                                <img class="card-img-bottom" src="card-img.png" alt="card-img-bottom" title="card-img-bottom">
+                            </div>
+                            <br>
+                            <div class="card">
+                                <img class="card-img overlay-image" alt="card-img" title="card-img" src="card-img.png">
+                                <div class="card-img-overlay">
+                                    <p class="card-text text-light">This is text that overlays the image, this can be done by applying the class 'card-img' to the image, and nesting text in a div with the class 'card-img-overlay'.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">The 'list-group' class will pull the group flush with the left side of the container</li>
+                                    <li class="list-group-item">The 'list-group-item' class will style each item by removing the bullet points and add padding & the grey border</li>
+                                    <li class="list-group-item">The 'list-group-flush' class will remove the left & right border from the items, the top border from the top item and the bottom border from the bottom item.</li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    card-header
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Card-title</h4>
+                                    <p class="card-text">card-text</p>
+                                </div>
+                                <div class="card-footer">
+                                    card-footer : works best with div tags
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <h3 class="card-header">card-header can also be assigned to a header tag for a larger and weightier heading</h3>
+                            </div>
+                            <br>
+                            <p class="lead">Card Group:</p>
+                            <div class="card-group">
+                                <div class="card">
+                                    <h3 class="card-header">Card One</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Cards can be grouped together by nesting them in a single parent with the class 'card-group'.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h3 class="card-header">Card Two</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex libero cumque minus harum eum possimus distinctio, sequi placeat porro inventore at, dolore commodi dolores quod repudiandae saepe voluptatibus odit quo?</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h3 class="card-header">Card Three</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia labore, expedita tempore adipisci nobis et dolor non exercitationem voluptatem facilis, quod sit, inventore quas minus facere. Nostrum odit beatae ipsum?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <p class="lead">Card Deck:</p>
+                            <div class="card-deck">
+                                <div class="card">
+                                    <h3 class="card-header">Card One</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Cards can also be grouped together using the class 'card-deck', the difference being the space between each card providing a better looking layout.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h3 class="card-header">Card Two</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex libero cumque minus harum eum possimus distinctio, sequi placeat porro inventore at, dolore commodi dolores quod repudiandae saepe voluptatibus odit quo?</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h3 class="card-header">Card Three</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia labore, expedita tempore adipisci nobis et dolor non exercitationem voluptatem facilis, quod sit, inventore quas minus facere. Nostrum odit beatae ipsum?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <p class="lead">Card Columns:</p>
+                            <div class="card-columns">
+                                <div class="card">
+                                    <h3 class="card-header">Card One</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">You can also break cards into columns of 3 by nesting the cards in a div with the class 'card-columns'</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h3 class="card-header">Card Two</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia labore, expedita tempore adipisci nobis et dolor non exercitationem voluptatem facilis, quod sit, inventore quas minus facere. Nostrum odit beatae ipsum?</p>
+                                    </div>
+                                </div><div class="card">
+                                    <h3 class="card-header">Card Three</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex libero cumque minus harum eum possimus distinctio, sequi placeat porro inventore at, dolore commodi dolores quod repudiandae saepe voluptatibus odit quo?</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h3 class="card-header">Card Four</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia labore, expedita tempore adipisci nobis et dolor non exercitationem voluptatem facilis, quod sit, inventore quas minus facere. Nostrum odit beatae ipsum?</p>
+                                    </div>
+                                </div><div class="card">
+                                    <h3 class="card-header">Card Five</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex libero cumque minus harum eum possimus distinctio, sequi placeat porro inventore at, dolore commodi dolores quod repudiandae saepe voluptatibus odit quo?</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h3 class="card-header">Card Six</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia labore, expedita tempore adipisci nobis et dolor non exercitationem voluptatem facilis, quod sit, inventore quas minus facere. Nostrum odit beatae ipsum?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="card bg-primary text-light">
+                                <h4 class="card-header">Styling cards</h4>
+                                <div class="card-body">
+                                    <p class="card-text">Cards can also be styled using common colour classes such as 'bg-primary' & 'text-light', just add the classes where you want them applied - add them to the card div to apply to the whole card.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <h3 class="card-header bg-danger text-light">bg-danger text-light</h3>
+                                <div class="card-body bg-warning text-danger">
+                                    <p class="card-text">bg-warning text-danger</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="carousel" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Carousel</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">The carousel class will easily allow you to create an image carousel complete with animations just using classes. All components will require to be nested within the 'Carousel' class to function properly. Add the class 'slide' for a smooth animation/transition.</p>
+                            <div id="carouselIndicatorExamples" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100 card-img" src="card-img.png" alt="First slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Adding a caption on the image</h3>
+                                            <p>Beneath the img tag add a div with the class 'carousel-caption', anything within that div will appear on the image instead of beneath.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100 card-img" src="card-img.png" alt="Second slide">
+                                        <div>
+                                            <p>The caption will appear beneath the slide if the class 'carousel-caption' isn't used.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselIndicatorExamples" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselIndicatorExamples" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <br>
+                            <p class="lead">To add a fade transition to slides, add the class 'carousel-fade' to the main div with the class 'carousel'.</p>
+                            <div id="carouselIndicatorFadeExamples" class="carousel slide carousel-fade" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100 card-img" src="carousel slide 1.svg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100 card-img" src="carousel slide 2.svg" alt="Second slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselIndicatorFadeExamples" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselIndicatorFadeExamples" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <br>
+                            <p class="lead">To add indicators to the carousel you will need to add an ordered list tag to list item's tags, you will need one list item' tag for each carousel item with the 'data-slide-to' attribute pointing to it's slide's number. Each list item will require its 'data-target' to be pointed to the id of the Carousel, and the ordered list tag will require the class 'carousel-indicators'.</p>
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100 card-img" src="card-img.png" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100 card-img" src="card-img.png" alt="Second slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapse" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Collapse</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">There are two different types of collapses: collapses & accordion, use the class 'collapse' on the collapsible elements for the collapse option, and place each accordion section within a single div. Each accordion section should have two child elements, one being the clickable heading and the second being the collapsible content.</p>
+                            <p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#collapsedElement" aria-expanded="false" aria-controls="collapseExample">Links target the collsapsed element using href</a>
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsedElement" aria-expanded="false" aria-controls="collapsedElement">Buttons use data-target</button>
+                            </p>
+                            <div class="collapse" id="collapsedElement">
+                                <div class="card card-body">
+                                    <p class="card-text">For both links and buttons you want to set the data-toggle attribute to "collsapse", set the aria-controls to the id of the collapsed element and set aria-expanded to "false".</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="accordion" role="tablist">
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Set the data-toggle to 'collapse' & the href to the id of collapsed content.</a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" role="tabpannel" aria-labelledby="headingOne">
+                                        <div class="card-body">
+                                            Add the id to the collapsed content, then add the class 'collapse'. The collapsed content and the clickable heading must be siblings within a div.
+                                            <br>
+                                            To have an item open by default add the class 'show' to the content and set aria-expand to 'true' for the clickable heading.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="optionTwo">Accordion Option 2</a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse" role="tabpannel" aria-labelledby="headingTwo">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat maiores quam blanditiis voluptatibus, ut sequi provident, veniam fugit asperiores voluptatum necessitatibus! Iusto incidunt eius amet nulla reprehenderit velit nisi sunt!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="optionTwo">Accordion Option 3</a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseThree" class="collapse" role="tabpannel" aria-labelledby="headingThree">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat maiores quam blanditiis voluptatibus, ut sequi provident, veniam fugit asperiores voluptatum necessitatibus! Iusto incidunt eius amet nulla reprehenderit velit nisi sunt!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="dropdowns" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Dropdowns</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">There are different dropdown classes that can be used for the different directions the options can appear, they are 'dropdown', 'dropup', 'dropleft' & 'dropright'. You can use 'btn-group' option instead to split the main button from the dropdown button. Nest the dropdown button and the dropdown options within a div that has one of the dropdown classes and set the data-toggle attribute to 'dropdown' in the button element.</p>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">dropdown-toggle</button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <p class="dropdown-item">Nest the dropdown options in the class 'dropdown-menu'</p>
+                                    <p class="dropdown-item">Each item should have the class 'dropdown-item'</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="btn-group">
+                                <button class="btn btn-secondary">btn-group</button>
+                                <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu">
+                                    <p class="dropdown-item">Add 2 buttons, one with the text/name and the second with the classes 'dropdown-toggle' & 'dropdown-toggle-split'. data-toggle will also need to be set to 'dropdown' in the secon button.</p>
+                                    <p class="dropdown-item">Add the class 'dropdown-item' to each dropdown item</p>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="btn-group dropup">
+                                <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">dropup</button>
+                                <div class="dropdown-menu">
+                                    <p class="dropdown-item">The dropup button uses the class 'dropdown-toggle' and the parent div has the classes 'btn-group' & 'dropup'</p>
+                                    <p class="dropdown-item">dropdown-item</p>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="btn-group dropup">
+                                <button class="btn btn-secondary">split dropup</button>
+                                <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" ></button>
+                                <div class="dropdown-menu">
+                                    <p class="dropdown-item">Like the last split dropdown menu, there are two buttons. The first one has the text within it and the second one has the classes 'dropdown-toggle' and now 'dropdown-toggle-split'</p>
+                                    <p class="dropdown-item">Both buttons and the dropdown menu are all nested in a div with the classes 'btn-group' & 'dropup'</p>
+                                    <p class="dropdown-item">Each dropdown-item has the class 'dropdown-item'/p>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="btn-group dropright">
+                                <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">dropright</button>
+                                <div class="dropdown-menu">
+                                    <p class="dropdown-item">Use the classes 'btn-group' & 'dropright' on the parent div instead of just 'dropdown' or 'btn-group' & 'dropright'</p>
+                                    <p class="dropdown-item">Don't forget the class 'dropdown-toggle' for the button</p>
+                                    <p class="dropdown-item">Each dropdown item will still have the class 'dropdown-item'</p>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="btn-group dropleft float-right">
+                                <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">dropleft</button>
+                                <div class="dropdown-menu">
+                                    <p class="dropdown-item">Exactly the same as dropright, just swap the class 'dropright' with 'dropleft'</p>
+                                    <p class="dropdown-item">If the dropleft is too close to the left side of the screen then the items will appear on the right</p>
+                                    <p class="dropdown-item">dropdown-item</p>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">dropdown item classes</button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                   <h5 class="dropdown-header">dropdown-header</h5>
+                                   <span class="dropdown-item-text">dropdown-item-text (can use the 'dropdown-item' class with a paragraph tag)</span>
+                                   <a href="#dropdowns" class="dropdown-item">Example of a dropdown-item class when used with an anchor tag instead of a pargraph tag</a>
+                                   <div class="dropdown-divider"></div>
+                                   <p class="dropdown-item">^ dropdown-divider ^</p>
+                                   <a href="#dropdowns" class="dropdown-item disabled">dropdown-item disabled</a>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">An example of a dropdown menu that appears on the right side of the dropdown button</button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                    <p class="dropdown-item">Add the class 'dropdown-menu-right' to the dropdown-items container div</p>
+                                    <p class="dropdown-item">dropdown-item</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="forms" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Forms</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">All forms will have the elements nested within a form element, the majority of the classes will be used on the elements within the form but a few will be used on the form element itself.</p>
+                            <form class=" border rounded p-3">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Nest the label and input within a div that has the class 'form-group'</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="give the input the class 'form-control'">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">Example Label</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Example Input">
+                                </div>
+                            </form>
+                            <br>
+                            <form class="form-inline border rounded p-3">
+                                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="form-control">
+
+                                <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+                                <div class="input-group mb-2 mr-sm-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">input-group-text</div>
+                                    </div>
+                                    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="'form-control'">
+                                </div>
+
+                                <div class="form-check mb-2 mr-sm-2">
+                                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                                    <label class="form-check-label" for="inlineFormCheck">Give the form the class 'form-inline'</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                            </form>
+                            <br>
+                            <form class=" border rounded p-3">
+                                <div class="form-group row">
+                                    <label for="inputEmail13" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Nest the optional label and input in a div with the classes 'form-group' & 'row'">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-10 offset-sm-2">
+                                        <button type="submit" class="btn btn-primary">Then nest the input in a div with a column class, such as 'col-sm-10'</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <br>
+                            <input class="form-control form-control-lg  border rounded p-3" type="text" placeholder="'form-control' & 'form-control-lg'">
+                            <br>
+                            <input class="form-control form-control-sm  border rounded p-3" type="text" placeholder="'form-control' & 'form-control-sm'">
+                            <br>
+                            <form class="border rounded p-3">
+                                <label for="form-control-file">form-control-file</label>
+                                <input class="form-control-file" type="file" id="form-control-file" title="form-control-file">
+                            </form>
+                            <br>
+                            <form class="border rounded p-3">
+                                <input type="text" class="form-control-plaintext" readonly value="form-control-plaintext, add the 'readonly' attribute to make it read only">
+                            </form>
+                            <br>
+                            <form class="border rounded p-3">
+                                <label for="form-control-range">form-control-range</label>
+                                <input type="range" class="form-control-range" id="form-control-range" title="form-control-range">
+                            </form>
+                            <br>
+                            <form class="border rounded p-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkbox1">
+                                    <label class="form-check-label" for="checkbox1">Nest the input within a div with the class 'form-check', there should be one input & label per div</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" id="radio1" checked>
+                                    <label class="form-check-label" for="radio1">Then give the input & label the classes 'form-check-input' & 'form-check-label' respectively</label>
+                                </div>
+                            </form>
+                            <br>
+                            <form class="border rounded p-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox1">
+                                    <label class="form-check-label" for="checkbox1">To make the inputs inline add the class 'form-check-inline' to the parent div</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="radio1" checked>
+                                    <label class="form-check-label" for="radio1">Lorem ipsum dolor sit amet consectetur adipisicing elit</label>
+                                </div>
+                            </form>
+                            <br>
+                            <form class="border rounded p-3">
+                                <input type="text" class="form-control" placeholder="Add the 'disabled' attribute to an input to disable it" disabled>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="form-input-groups" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Form Input Groups</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">The form input groups will need to be nested within a div that has the class 'input-group', this is to keep the elements and the input inline with each other.</p>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">input-group-prepend</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="The child elements of the input-group-prepend/append classes should have the class 'input-group-text'">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">input-group-append</span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">input-group-lg</div>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Add the class 'input-group-lg' onto the parent div to make the input group larger">
+                            </div>
+                            <br>
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">input-group-sm</div>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Add the class 'input-group-sm' onto the parent div to make the input group smaller">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="checkbox">
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="You can put an input tag within the 'input-group-text' class for a more advanced looking form">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" checked>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="This also works with radio buttons">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="custom-forms" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Custom Forms</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">Each custom form element will need to be nested in a div with their own unique class that follows the structure 'custom-x', the checkbox, radio & switch will need the class 'custom-control-input' and their parent div to include the class 'custom-control' to correctly style and pad the elements. The select, file & range do not require the class 'custom-control-input' or the nested div. The label's can optionally use the class 'custom-control-label'.</p>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckbox">
+                                <label class="custom-control-label" for="customCheckbox">custom-checkbox</label>
+                            </div>
+                            <br>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="customRadio">
+                                <label class="custom-control-label" for="customRadio">custom-radio</label>
+                            </div> 
+                            <br>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch">
+                                <label class="custom-control-label" for="customSwitch">custom-switch</label>
+                            </div>
+                            <br>
+                            <select class="custom-select">
+                                <option selected>custom-select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <br>
+                            <br>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">custom-file</label>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="border rounded p-3">
+                                <label for="customRange">custom-range</label>
+                                <input type="range" class="custom-range" id="customRange">
+                                <p class="mt-3 mb-0">You can add 'min' & 'max' attributes to the range input to control what the minimum and the maximum of the range is</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="grid" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Grid</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">With the Bootstrap grid system, each column will need to be nested within a div with the class 'row', each 'row' class will then need to be nested within another div with the class 'container' or 'container-fluid'. The only exception being nested columns.</p>
+                            <div class="container border rounded">
+                                container
+                            </div>
+                            <br>
+                            <div class="container-fluid border rounded px-4 py-2">
+                                container-fluid
+                                <br>
+                                <br>
+                                <div class="row border rounded">
+                                    row
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-4 border rounded">
+                                        col-sm-4
+                                    </div>
+                                    <div class="col-sm-4 border rounded">
+                                        col-sm-4
+                                    </div>
+                                    <div class="col-sm-4 border rounded">
+                                        col-sm-4
+                                    </div>
+                                </div>
+                                <br>
+                                <p>With column widths, you can control how big elements are based off of the screen size, the options are: col-x (extra small), col-sm-x, col-md-x, col-lg-x & col-xl-x</p>
+                                <div class="row">
+                                    <div class="col-sm-3 border rounded">
+                                        col-x: Screens smaller than 576px
+                                    </div>
+                                    <div class="col-sm-3 border rounded">
+                                        col-sm-x: Screens larger than 576px
+                                    </div>
+                                    <div class="col-sm-3 border rounded">
+                                        col-md-x: Screens larger than 768px
+                                    </div>
+                                    <div class="col-sm-3 border rounded">
+                                        col-lg-x: Screens larger than 992px
+                                    </div>
+                                    <div class="col-sm-12 border rounded mt-1">
+                                        col-xl-x: Screens larger than 1200px
+                                    </div>
+                                    <div class="col-sm-12 border rounded mt-1">
+                                        The width of the parent element or screen is split up into 12 segments, you assign 'x' to the number of segments you want a element to take up. For example, if you wanted a navigation bar with four equal tabs on every screen above 576px, you would assign each tab the class 'col-sm-3'
+                                    </div>
+                                </div>
+                                <br>
+                                <p>If the number elements you want in a container don't equally add up to 12 (e.g 5 elements), then you can equally split the elements across all screen sizes using the class 'col', if you want the layout or number of columns per row to change based on screen size you can use the class 'col-y', 'y' being the screen size such as sm, md, etc.</p>
+                                <div class="row">
+                                    <div class="col border rounded">
+                                        col 1
+                                    </div>
+                                    <div class="col border rounded">
+                                        col 2
+                                    </div>
+                                    <div class="col border rounded">
+                                        col 3
+                                    </div>
+                                    <div class="col border rounded">
+                                        col 4
+                                    </div>
+                                    <div class="col border rounded">
+                                        col 5
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col border rounded">
+                                        This element has the class 'col'
+                                    </div>
+                                    <div class="col border rounded">
+                                        This element has the class 'col'
+                                    </div>
+                                    <div class="col border rounded">
+                                        This element has the class 'col'
+                                    </div>
+                                    <div class="col-xl border rounded">
+                                        This element has the class 'col-xl', it will put itself on it's own line if the screen width is less than 1200px
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row no-gutters">
+                                    <div class="col-sm-6 border rounded">
+                                        Add the class 'no-gutters' to the parent 'row' div to remove all padding
+                                    </div>
+                                    <div class="col-sm-6 border rounded">
+                                        col-sm-6
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-1 border rounded">1</div>
+                                    <div class="col-sm-1 border rounded">2</div>
+                                    <div class="col-sm-1 border rounded">3</div>
+                                    <div class="col-sm-1 border rounded">4</div>
+                                    <div class="col-sm-1 border rounded">5</div>
+                                    <div class="col-sm-1 border rounded">6</div>
+                                    <div class="col-sm-1 border rounded">7</div>
+                                    <div class="col-sm-1 border rounded">8</div>
+                                    <div class="col-sm-1 border rounded">9</div>
+                                    <div class="col-sm-1 border rounded">10</div>
+                                    <div class="col-sm-1 border rounded">11</div>
+                                    <div class="col-sm-1 border rounded">12</div>
+                                    <div class="col-sm-4 offset-3 border rounded">
+                                        Add the class 'offset-x' to a child element to push/offset the element by x spaces. This child element is using the class 'offset-3'
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-12 border rounded mb-1">You can use the class 'order-x' to control which order elements appear in, the following elements appear in the reverse order in the HTML but the correct order on the page.</div>
+                                    <div class="col order-4 border rounded">order-4</div>
+                                    <div class="col order-3 border rounded">order-3</div>
+                                    <div class="col order-2 border rounded">order-2</div>
+                                    <div class="col order-1 border rounded">order-1</div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-12 border rounded px-4 py-2">
+                                        Level 1 col-sm-12
+                                        <div class="row">
+                                            <div class="col-sm-11 border rounded">
+                                                Level 2 col-sm-11, nested within a div that has the class 'row', which in turn is nested within the Level 1 div
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="images" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Images</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">There are two different 'img' classes, 'img-fluid' will allow images to be flexible and fit to the size of the parent container, and the other, 'img-thumbnail' will do the same, but also add a thin, white & rounded border to give off the appearance of a thumbnail.</p>
+                            <p class="lead my-2">img-fluid</p>
+                            <img class="img-fluid" src="card-img.png">
+                            <p class="lead my-2">img-thumbnail</p>
+                            <img class="img-thumbnail" src="card-img.png">
+                        </div>
+                    </div>
+                    <div id="jumbotron" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Jumbotron</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">The jumbotron uses utility classes for typography and spacing to space content out within the larger container, add the class 'jumbotron-fluid' to fill up the whole width of the parent element.</p>
+                            <div class="jumbotron">
+                                <h1>jumbotron</h1>
+                            </div>
+                            <br>
+                            <div class="jumbotron jumbotron-fluid">
+                                <div class="container-fluid">
+                                    <h1>jumbotron-fluid</h1>
+                                    <p class="lead">Adding the 'jumbotron-fluid' class will make the jumbotron take up the full width of the parent element regardless of screen size. It will also remove some of the padding within the jumbotron. You will also want to nest the content in the jumbotron with a class of 'container-fluid' to make sure the content takes up the width of the jumbotron.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="list-group" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">List Group</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">For the list groups, the 'list-group' class must have child elements with the class 'list-group-item', the 'list-group' can work on 'unordered list' elements or 'div' elements.</p>
+                            <ul class="list-group">
+                                <li class="list-group-item">List group items can use different HTML tags such as 'li', 'a', 'p', etc.</li>
+                                <li class="list-group-item">list-group-item</li>
+                                <li class="list-group-item active">active</li>
+                                <li class="list-group-item disabled">disabled</li>
+                                <li class="list-group-item list-group-item-action">list-group-item-action</li>
+                                <li class="list-group-item list-group-item-primary">list-group-item-primary</li>
+                                <li class="list-group-item list-group-item-secondary">list-group-item-secondary</li>
+                                <li class="list-group-item list-group-item-success">list-group-item-success</li>
+                                <li class="list-group-item list-group-item-info">list-group-item-info</li>
+                                <li class="list-group-item list-group-item-warning">list-group-item-warning</li>
+                                <li class="list-group-item list-group-item-danger">list-group-item-danger</li>
+                                <li class="list-group-item list-group-item-light">list-group-item-light</li>
+                                <li class="list-group-item list-group-item-dark">list-group-item-dark</li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    Add the class 'd-flex' & 'justify-content-between' to space out text and other elements in a list group item
+                                    <span class="badge-pill badge-danger">Sale!</span>
+                                </li>
+                            </ul>
+                            <br>
+                            <ul class="list-group list-group-horizontal">
+                                <li class="list-group-item">Add class 'list-group-horizontal'</li>
+                                <li class="list-group-item">to the parent unordered list or 'div' element</li>
+                                <li class="list-group-item">to change the layout to a horizontal position</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="media-objects" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Media Objects</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">Every media feature will need to be nested within a div with the class 'media' to have the correct layout, padding & margin.</p>
+                            <div class="media p-2">
+                                <img src="profile-pic.png" class="d-flex mr-3" alt="Profile Pic" width="60" height="auto">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Media Heading</h5>
+                                    The content of a Media Object will need to be seperated from the image by using a div with the class 'media-body'.
+                                    <br>
+                                    <br>
+                                    <div class="media mt-3">
+                                        <img src="profile-pic.png" class="d-flex mr-3" alt="Profile Pic" width="40" height="auto">
+                                        <div class="media-body">
+                                            <h5>Nesting Media Objects</h5>
+                                            You can nest Media Objeccts by placing a div with the class 'media' within the 'media-body' class.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="media border rounded p-2">
+                                <img class="d-flex align-self-start mr-3" src="profile-pic.png" alt="Profile Pic" width="60" height="auto">
+                                <div class="media-body">
+                                    <h5>Top aligned</h5>
+                                    Add the class 'align-self-start' to the image to align the image at the top of the Media Object.
+                                    <br>
+                                    <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt aliquam nam aperiam veritatis reprehenderit, itaque magni qui! Dolorum optio voluptates alias veritatis ad hic harum impedit quia sunt praesentium, eius, porro nemo. Dolore dicta aperiam sint non, molestias velit provident culpa eius fugiat, cupiditate architecto illum at voluptates aspernatur.
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="media border rounded p-2">
+                                <img class="d-flex align-self-center mr-3" src="profile-pic.png" alt="Profile Pic" width="60" height="auto">
+                                <div class="media-body">
+                                    <h5>Center aligned</h5>
+                                    Add the class 'align-self-center' to the image to align the image in the middle of the Media Object.
+                                    <br>
+                                    <br>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore omnis animi iure? Dolorum velit provident consectetur odio molestiae error dolorem laudantium, fugiat ullam consequatur aperiam assumenda obcaecati sequi reprehenderit! Obcaecati, libero, labore ratione ut a vitae similique deserunt incidunt fugiat mollitia nostrum magni nulla eum possimus deleniti nesciunt eveniet sequi?
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="media border rounded p-2">
+                                <img class="d-flex align-self-end mr-3" src="profile-pic.png" alt="Profile Pic" width="60" height="auto">
+                                <div class="media-body">
+                                    <h5>Bottom aligned</h5>
+                                    Add the class 'align-self-end' to the image to align the image at the bottom of the Media Object.
+                                    <br>
+                                    <br>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores eveniet eligendi dignissimos ducimus veritatis aperiam accusantium nesciunt molestias delectus consequuntur? Corporis expedita quia modi nihil optio odit ipsam tempora, error at tempore, soluta nemo dignissimos illo aut numquam explicabo quaerat culpa esse porro rerum! Odit atque quae quibusdam beatae rerum?
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="media p-2">
+                                <div class="media-body">
+                                    <h5>Right Aligned</h5>
+                                    Place the img tag after the 'media-body' to place the image after the main text/content.
+                                    <br>
+                                    <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat voluptate fugiat dignissimos? Numquam rem ea deserunt accusamus cum magni, quo dolorem reiciendis commodi provident illum. Molestias nihil blanditiis natus aperiam doloremque, expedita qui dolorem beatae fuga! Debitis, officiis aspernatur illum veniam ea porro facilis nostrum molestias quibusdam beatae obcaecati.
+                                </div>
+                                <img class="d-flex ml-3" src="profile-pic.png" alt="Profile Pic" width="60" height="auto">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modal" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Modal</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">Modals will have two components, the trigger button and the modal div, they aren't required to be nested within the same div but instead use the data-target/href and id linking method. The modal will need to have a class of 'modal', then that will have a child div with the class 'modal-dialog' to center the modal, within that div there will be the child div with the class 'div-content'. This div contains the header, main body & footer for the modal, they have the classes 'modal-header', 'modal-body' & 'modal-footer' respectively.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Demo Modal</button>
+
+                            <div class="modal" id="exampleModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            'modal-header'
+                                            <button class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            'modal-body'
+                                        </div>
+                                        <div class="modal-footer">
+                                            'modal-footer' 
+                                            <button class="btn btn-secondary" data-dismiss="modal">data-dismiss="modal"</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">modal-dialog-centered</button>
+
+                            <div class="modal" id="exampleModal2">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            Center the Modal
+                                            <button class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Add the class 'modal-dialog-centered' to the div with the class 'modal-dialog' to center the modal vertically along the screen.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">modal-dialog-scrollable</button>
+
+                            <div class="modal" id="exampleModal3">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            Scollable Modal Body
+                                            <button class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Add the class 'modal-dialog-scrollable' to the 'modal-dialog' div to make the body of the modal scrollable. If the content isn't long enough to overflow past the container then the scrollbar won't appear.
+                                            <br>
+                                            <br>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad provident iure enim illum blanditiis aut officiis, unde necessitatibus, id perferendis quae eligendi dolore amet reiciendis consectetur nobis in pariatur similique, rerum aliquam nisi facilis cum error. At vel possimus enim, ipsam voluptates est suscipit deleniti quo esse eum unde ullam veniam dolor corrupti soluta neque nesciunt corporis! Beatae dolor repellat explicabo excepturi similique nihil omnis maxime temporibus blanditiis, sed et doloremque in. Quas maiores magnam adipisci officiis sint modi hic necessitatibus saepe, dolore beatae doloremque perferendis ex nesciunt iusto nam ratione. Ipsa explicabo beatae architecto adipisci at nam, voluptatem, animi, a cupiditate similique ratione repellendus? Quisquam accusamus, voluptatibus repellat eaque iste quam cupiditate inventore at commodi quae, nemo error! Sunt nisi temporibus, aut architecto reiciendis, obcaecati esse aspernatur ipsa optio atque quo corrupti ipsum nostrum autem omnis placeat, voluptas illo culpa fugit. Consectetur sequi itaque officiis libero. Maxime quidem ex nesciunt inventore quas laudantium officiis, ratione in recusandae, doloremque perspiciatis quisquam est minus magnam quis at deleniti sunt? Ullam necessitatibus placeat eum reiciendis nihil! Inventore deserunt laborum corporis, autem deleniti suscipit saepe non voluptates praesentium unde qui laudantium neque obcaecati debitis porro repellat iure eos sapiente dolorum ipsa quibusdam aliquid. Quaerat aliquid accusantium nulla voluptate eveniet expedita esse ipsum, deserunt animi vitae velit sapiente incidunt voluptatem earum veritatis nesciunt. Non quia unde dolore obcaecati suscipit dicta excepturi illum recusandae maxime iusto totam, aliquid expedita incidunt itaque velit molestiae quisquam, modi accusantium ea ratione labore neque voluptas! Laborum eveniet laudantium possimus cupiditate maiores similique tenetur magni atque saepe inventore rerum beatae nesciunt quibusdam incidunt harum distinctio debitis perspiciatis dolorum, sint impedit consequatur? Cumque quisquam voluptate totam dolorem dignissimos ea labore quam omnis recusandae, delectus modi architecto explicabo, molestias adipisci illum magnam quos? Ipsam dolorum sit, necessitatibus quo accusantium veritatis magnam repellendus.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">fade</button>
+                            
+                            <div class="modal fade" id="exampleModal4">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            Fading Modal Affect
+                                            <button class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            To add a fade affect to a modal add the class 'fade' to the parent modal div.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5">modal-lg</button>
+                            
+                            <div class="modal" id="exampleModal5">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            Large Modal
+                                            <button class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Add the class 'modal-lg' to the div with the class 'modal-dialog' to make the modal larger/wider.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal6">modal-sm</button>
+                            
+                            <div class="modal" id="exampleModal6">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            Small Modal
+                                            <button class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Similar to the last class, add the class 'modal-sm' to the div with the class 'modal-dialog' to make the modal smaller.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal7">modal-xl</button>
+                            
+                            <div class="modal" id="exampleModal7">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            Extra Large Modal
+                                            <button class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Add the class 'modal-xl' to the div with the class 'modal-dialog' to make the modal extra large.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="navs" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Navs</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">Navs must have the class 'nav' in order to utilise the nav theme, each child of the 'nav' element is then a tab/link within the nav as long as it has the class 'nav-link'. The following variations of navs will add the unique class to the parent element with the class 'nav', with the exception of the dropdowns as these will add the class to child elements.</p>
+                        </div>
+                        <p class="lead pl-3 mb-0">Standard Nav</p>
+                        <nav class="nav">
+                            <a href="#header" class="nav-link">Top</a>
+                            <a href="#alerts" class="nav-link">A-D</a>
+                            <a href="#forms" class="nav-link">F-M</a>
+                            <a href="#navs" class="nav-link active">N-T</a>
+                            <a href="#borders" class="nav-link">Utility</a>
+                        </nav>
+                        <br>
+                        <p class="lead pl-3 mb-0">justify-content-center</p>
+                        <nav class="nav justify-content-center">
+                            <a href="#header" class="nav-link">Top</a>
+                            <a href="#alerts" class="nav-link">A-D</a>
+                            <a href="#forms" class="nav-link">F-M</a>
+                            <a href="#navs" class="nav-link active">N-T</a>
+                            <a href="#borders" class="nav-link">Utility</a>
+                        </nav>
+                        <br>
+                        <p class="lead pl-3 mb-0">flex-column</p>
+                        <nav class="nav flex-column">
+                            <a href="#header" class="nav-link">Top</a>
+                            <a href="#alerts" class="nav-link">A-D</a>
+                            <a href="#forms" class="nav-link">F-M</a>
+                            <a href="#navs" class="nav-link active">N-T</a>
+                            <a href="#borders" class="nav-link">Utility</a>
+                        </nav>
+                        <br>
+                        <p class="lead pl-3 mb-0">nav-tabs</p>
+                        <nav class="nav nav-tabs">
+                            <a href="#header" class="nav-link">Top</a>
+                            <a href="#alerts" class="nav-link">A-D</a>
+                            <a href="#forms" class="nav-link">F-M</a>
+                            <a href="#navs" class="nav-link active">N-T</a>
+                            <a href="#borders" class="nav-link">Utility</a>
+                        </nav>
+                        <br>
+                        <p class="lead pl-3 mb-0">nav-pills</p>
+                        <nav class="nav nav-pills">
+                            <a href="#header" class="nav-link">Top</a>
+                            <a href="#alerts" class="nav-link">A-D</a>
+                            <a href="#forms" class="nav-link">F-M</a>
+                            <a href="#navs" class="nav-link active">N-T</a>
+                            <a href="#borders" class="nav-link">Utility</a>
+                        </nav>
+                        <br>
+                        <p class="lead pl-3 mb-1">nav-fill. The class 'nav-pills' is also required for this nav if you want to show which tab is the current active one, you'll also want to nest the anchor tag in the class 'nav-item'</p>
+                        <nav class="nav nav-pills nav-fill">
+                            <p class="nav-item">
+                                <a href="#header" class="nav-link">Top</a>
+                            </p>
+                            <p class="nav-item">
+                                <a href="#alerts" class="nav-link">A-D</a>
+                            </p>
+                            <p class="nav-item">
+                                <a href="#forms" class="nav-link">F-M</a>
+                            </p>
+                            <p class="nav-item">
+                                <a href="#navs" class="nav-link active">N-T</a>
+                            </p>
+                            <p class="nav-item">
+                                <a href="#borders" class="nav-link">Utility</a>
+                            </p>
+                        </nav>
+                        <br>
+                        <p class="lead pl-3 mb-0">nav-justified. This class also requires the 'nav-pills' class and the nested child structure</p>
+                        <nav class="nav nav-pills nav-justified">
+                            <p class="nav-item">
+                                <a href="#header" class="nav-link">Top</a>
+                            </p>
+                            <p class="nav-item">
+                                <a href="#alerts" class="nav-link">A-D</a>
+                            </p>
+                            <p class="nav-item">
+                                <a href="#forms" class="nav-link">F-M</a>
+                            </p>
+                            <p class="nav-item">
+                                <a href="#navs" class="nav-link active">N-T</a>
+                            </p>
+                            <p class="nav-item">
+                                <a href="#borders" class="nav-link">Utility</a>
+                            </p>
+                        </nav>
+                        <br>
+                        <p class="lead pl-3 mb-0">nav-pills, flex-column & flex-sm-row. The child elements will require the classes 'flex-sm-fill text-sm-center'</p>
+                        <nav class="nav nav-pills flex-column flex-sm-row">
+                            <a href="#header" class="flex-sm-fill text-sm-center nav-link">Top</a>
+                            <a href="#alerts" class="flex-sm-fill text-sm-center nav-link">A-D</a>
+                            <a href="#forms" class="flex-sm-fill text-sm-center nav-link">F-M</a>
+                            <a href="#navs" class="flex-sm-fill text-sm-center nav-link active">N-T</a>
+                            <a href="#borders" class="flex-sm-fill text-sm-center nav-link">Utility</a>
+                        </nav>
+                        <br>
+                        <p class="lead pl-3 mb-0">dropdown. Apply the 'dropdown' class to a child element, then within that child element add a paragraph or anchor tag for the label followed by a div with the class 'dropdown-menu', the dropdown option within that container will need the class 'dropdown-item'</p>
+                        <nav class="nav mb-3">
+                            <a href="#header" class="nav-link">Top</a>
+                            <a href="#alerts" class="nav-link">A-D</a>
+                            <a href="#forms" class="nav-link">F-M</a>
+                            <a href="#navs" class="nav-link active">N-T</a>
+                            <li class="nav-item dropdown">
+                                <a href="#!" class="nav-link dropdown-toggle" data-toggle="dropdown">Utility</a>
+                                <div class="dropdown-menu">
+                                    <p class="dropdown-item">The dropdown tab will need the class 'nav-item' instead of the usual 'nav-link'</p>
+                                    <a class="dropdown-item" href="#dropdowns">The dropdown function will follow the same syntax and classes as regular dropdowns, click to revisit the dropdowns</a>
+                                    <a class="dropdown-item" href="#borders">Borders</a>
+                                    <a class="dropdown-item" href="#colours">Colours</a>
+                                    <a class="dropdown-item" href="#display">Display</a>
+                                    <a class="dropdown-item" href="#flexbox">Flexbox</a>
+                                    <a class="dropdown-item" href="#misc">Miscellaneous</a>
+                                    <a class="dropdown-item" href="#positioning">Positioning</a>
+                                    <a class="dropdown-item" href="#sizing">Sizing</a>
+                                    <a class="dropdown-item" href="#spacing">Spacing</a>
+                                    <a class="dropdown-item" href="#text">Text</a>
+                                </div>
+                            </li>
+                            
+                        </nav>
+                    </div>
+                    <div id="navbar" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Navbar</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">The navbar class is similar to the nav class, the main difference being that the child elements don't have to be links, instead they can be buttons, images, searchbars or other features. For all navbar classes and variations you will want the main/parent element to have the class 'navbar'.</p>
+                            <div class="navbar navbar-expand-lg navbar-light bg-light">
+                                <a class="navbar-brand" href="#header">Bootstrap Documentation Recreation</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#alerts">A-D</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#forms">F-M</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#navs">N-T <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#borders">Utility</a>
+                                        </li>
+                                    </ul>
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="navbar navbar-light bg-light">
+                                <a class="navbar-brand">navbar-brand</a>
+                                <span class="navbar-text">navbar-text</span>
+                                <form class="form-inline">
+                                    <input type="text" class="form-control mr-sm-2" placeholder="form-inline">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <br>
+                            <div class="navbar navbar-dark bg-dark">
+                                <a class="navbar-brand">navbar-dark bg-dark</a>
+                            </div>
+                            <br> 
+                            <div class="navbar navbar-dark bg-primary">
+                                <a class="navbar-brand">navbar-dark bg-primary</a>
+                            </div>
+                            <br>
+                            <div class="navbar navbar-light">
+                                <a class="navbar-brand">navbar-light</a>
+                            </div>
+                            <br>
+                            <div class="navbar navbar-light bg-light">
+                                <a class="navbar-brand">navbar-light bg-light</a>
+                            </div>
+                            <br>
+                            <button class="btn btn-primary" data-toggle="collapse" data-target="#fixed-top">Show/Hide navbar fixed-top</button>
+                            <br>
+                            <br>
+                            <button class="btn btn-primary" data-toggle="collapse" data-target="#fixed-bottom">Show/Hide navbar fixed-bottom</button>
+                            <br>
+                            <br>
+                            <div class="w-50border rounded overflow-auto" style="height: 150px">
+                                <nav class="navbar sticky-top navbar-dark bg-dark">
+                                    <a class="navbar-brand">sticky-top</a>
+                                    <br>
+                                </nav>
+                                <span class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsam, enim odio at neque corrupti soluta dolores inventore temporibus voluptate laboriosam cupiditate hic nihil laborum tenetur, eligendi velit, sit eius iste fugit eaque numquam! Eligendi adipisci amet quasi reiciendis cumque consequatur, voluptate esse commodi cum libero maxime dolorum! Minus corrupti dolore est itaque earum incidunt sit vero repudiandae a, quis saepe! Dignissimos quaerat deleniti quisquam ab, corporis eligendi. Nemo perferendis quis ipsam nulla eos architecto, quod repellendus molestias et omnis est soluta harum asperiores totam? Quos cumque saepe ratione sint est unde labore, laudantium eligendi a necessitatibus omnis, architecto possimus, officiis sed. Laudantium culpa, minus numquam ex quos ratione, neque hic obcaecati aut consectetur vitae nobis libero voluptatem. Illum assumenda autem fuga temporibus ducimus dolorum non ipsum nobis perferendis atque repellendus iste dolores reprehenderit, eveniet inventore illo sapiente voluptate culpa? Labore eveniet eligendi saepe minima rem earum ipsam, doloribus modi animi beatae laboriosam reiciendis esse cumque. Cum laborum et nostrum omnis, totam mollitia! Quia molestias reprehenderit voluptatem nobis quas doloremque, officiis obcaecati vero nesciunt ab eum mollitia corporis ea labore hic facilis iusto ad a tempora asperiores ut aliquam tenetur. Labore, possimus perspiciatis. Dolore, eius facere! Odit fuga natus, magni aliquid voluptates obcaecati assumenda sed quaerat quis modi expedita dolore eaque consequuntur provident nisi voluptate. Iure, ducimus recusandae quos nisi autem aliquid sunt voluptas delectus sint, repellendus quidem alias blanditiis dignissimos officia vero debitis voluptatem ad commodi maxime odio, asperiores earum rerum? Voluptas quo repellendus aspernatur necessitatibus hic, eum totam libero consequatur natus odit saepe placeat nesciunt. Aliquid qui nesciunt explicabo rem esse repellat, iure distinctio accusantium officiis cum eius commodi at natus corporis necessitatibus! Nesciunt consequatur consectetur assumenda porro id est. Quo aspernatur a inventore dolore aliquam quidem, consequatur eos vitae voluptas rem, ab omnis ullam sint id quaerat.</span>
+                            </div>
+                            <nav class="navbar fixed-top navbar-dark bg-primary collapse" data-toggle="collapse" data-target="#fixed-top" id="fixed-top">
+                                <a class="navbar-brand">fixed-top</a><span class="text-light">(click to hide)</span>
+                            </nav>
+                            <nav class="navbar fixed-bottom navbar-dark bg-primary collapse" data-toggle="collapse" data-target="#fixed-bottom" id="fixed-bottom">
+                                <a class="navbar-brand">fixed-bottom</a><span class="text-light">(click to hide)</span>
+                            </nav>
+                            <br>
+                            <div class="navbar navbar-expand-lg navbar-light bg-light">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseOne" aria-controls="navbarCollapseOne">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarCollapseOne">
+                                    <p class="navbar-text">Change the width of the page to see the navbar collapse/expand</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="navbar navbar-expand-md navbar-light bg-light">
+                                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <p class="navbar-text mr-5">navbar-expand-md</p>
+
+                                <div class="collapse navbar-collapse" id="navbarToggler">
+                                    <p class="navbar-text">Add the class navbar-expand-lg, navbar-expand-md or navbar-expand-sm to the parent div to control when the navbar collapses</p>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div id="pagination" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Pagination</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">Every pagination feature adds the class 'pagination' to the unordered list element, that is then in turn optionally a child element of a 'nav' element. The unordered list element will have children using the class 'page-item' that then has a nested 'anchor' with the class 'page-link'.</p>
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#navbar">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#!">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#!">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#!">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#popover">
+                                            <span>&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#!">disabled</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#!">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#!">2</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#!">active</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#popover">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <nav>
+                                <p class="lead mb-1">Add the class 'pagination-lg' to the unordered list element to make the pagination larger</p>
+                                <ul class="pagination pagination-lg">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#navbar">Previous</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#!">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#!">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#!">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#popover">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <nav>
+                                <p class="lead mb-1">Add the class 'pagination-sm' to the unordered list element to make the pagination smaller</p>
+                                <ul class="pagination pagination-sm">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#navbar">Previous</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#!">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#!">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#!">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#popover">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="popover" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Popover</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">Popovers don't utilise any unique classes, instead they use the HTML attributes, data-toggle (set to popover), data-placement (top, right, left, bottom) and data-content, as well as a small amount of custom JavaScript to display the information when clicked on.</p>
+                            <button type="button" class="btn btn-danger" data-toggle="popover" data-placement="top" data-content="$(function(){
+                                $('[data-toggle=\'popover\']').popover()
+                              });">Custom JavaScript</button>
+                            <br>
+                            <br>
+                            <button type="button" class="btn btn-info" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus!">Popover Top</button>
+                            <br>
+                            <br>
+                            <button type="button" class="btn btn-info" data-toggle="popover" data-placement="right" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus!">Popover Right</button>
+                            <br>
+                            <br>
+                            <button type="button" class="btn btn-info float-right" data-toggle="popover" data-placement="left" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus!">Popover Left</button>
+                            <br>
+                            <br>
+                            <button type="button" class="btn btn-info" data-toggle="popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus!">Popover Bottom</button>
+                            <br>
+                            <br>
+                            <button type="button" class="btn btn-warning" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Add the attribute 'data-trigger='focus'' to hide the popup when clicking anywhere else than the popup">Dismissible Popovers</button>
+                        </div> 
+                    </div>
+                    <div id="progress" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Progress</h1>
+                        <div class="p-3">
+                            <p class="lead pb-4">Every progress bar will need to be nested within a div with the class 'progress', each bar then requires the class 'progress-bar', the progress of the progress bar is then determined by the width CSS style.</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 41%"></div>
+                            </div>
+                            <br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 50%">Place text within the div to add a label</div>
+                            </div>
+                            <br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 35%">Add the attributes 'aria-valuemin' & 'aria-valuemax' to set custom min & max ranges</div>
+                            </div>
+                            <br>
+                            <div class="progress" style="height: 50px">
+                                <div class="progress-bar" style="width: 70%">You can set the height of the progress bar using the CSS height styling property on the 'progress' div</div>
+                            </div>
+                            <br>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" style="width: 80%">Add the bg-primary, bg-secondary, bg-sucess, etc, classes to the 'progress-bar' div to colour it</div>
+                            </div>
+                            <br>
+                            Nest multiple 'progress-bar' divs within one 'progress' bar div to align multiple progress bars in a single line
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" style="width: 30%">30%</div>
+                                <div class="progress-bar bg-secondary" style="width: 20%">20%</div>
+                                <div class="progress-bar bg-sucess" style="width: 10%">10%</div>
+                                <div class="progress-bar bg-info" style="width: 10%">10%</div>
+                                <div class="progress-bar bg-warning" style="width: 5%">5%</div>
+                                <div class="progress-bar bg-danger" style="width: 7%">7%</div>
+                                <div class="progress-bar bg-dark" style="width: 15%">15%</div>
+                            </div>
+                            <br>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" style="width: 40%">progress-bar-striped</div>
+                            </div>
+                            <br>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-danger" style="width: 45%">Also works with the 'bg-x' colour classes</div>
+                            </div>
+                            <br>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 90%">progress-bar-animated</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="scrollspy" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Scrollspy</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">The scrollspy uses a basic nav for the two titles that track what section you are in/on, the body of the scrollspy will then have the data-spy attribute set to scroll, the data-target set to the id of the nav, the classes 'scrollspy' & 'overflow-auto'. The scrollspy will then have a fixed height and its position set to relative in order to function correctly.</p>
+                            <nav id="navbar-example2" class="navbar navbar-light bg-light mb-3">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item"><a class="nav-link active" href="#verse1">Verse 1</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#verse2">Verse 2</a></li>
+                                </ul>
+                            </nav>
+                            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy overflow-auto " style="height: 200px; position: relative">
+                                <h4 id="verse1">Verse 1</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minima, ullam enim facilis sapiente sint velit? Blanditiis inventore aut deserunt harum? Temporibus quia aliquam eius adipisci quae amet sed dignissimos exercitationem maxime culpa doloremque deleniti nisi minima soluta accusamus, perspiciatis et excepturi voluptate qui tempora possimus vero eveniet sequi impedit? Atque iure facilis tenetur qui sit maiores ipsum. Deserunt autem expedita, ipsam dicta quos error ducimus consectetur fugit? Voluptatibus sit deserunt quam aperiam delectus nam quibusdam incidunt deleniti alias at, repellat eaque nostrum ab modi praesentium laborum, nulla itaque facere! Cupiditate quos magnam rem ea in repellat corporis itaque, quae eius pariatur iste, culpa voluptate aliquam sunt adipisci placeat dolores facilis eligendi perferendis. Ea accusantium tempora facilis. Maiores, ratione aspernatur. Quae ipsam soluta architecto animi, voluptate quos dolores eaque quia tenetur deleniti, placeat nesciunt eligendi iusto maiores iure, totam velit est optio! Ducimus debitis, cupiditate asperiores modi odit dolorem repudiandae labore corporis vel vitae ipsum rem nihil. Sunt, libero. Voluptatum, quas impedit voluptatem officia autem sed recusandae, commodi eveniet quo laborum ab id fugit veritatis, temporibus consectetur nobis ea nihil maiores assumenda nisi sit? Id, quisquam quidem. Soluta dolorem quis dolor eligendi veniam iusto quod pariatur voluptatum laboriosam, accusantium perspiciatis.</p>
+                                <h4 id="verse2">Verse 2</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore illo quo sed asperiores ut incidunt unde quis similique debitis, consequatur est minima vel itaque, quidem cupiditate excepturi reiciendis expedita cumque adipisci accusamus quos omnis perspiciatis. Aut dolor corrupti nisi laborum tenetur dignissimos perspiciatis fugit, exercitationem enim est explicabo expedita perferendis at accusamus in obcaecati eius sint, ipsum odit quam? Et, consequatur! Et alias explicabo error. Iste, sunt? Tenetur dolor omnis asperiores. Et veritatis sit voluptas necessitatibus tempore eius atque quos quisquam placeat asperiores, aliquid error neque natus suscipit deserunt, sint ducimus in aspernatur dolorum deleniti voluptatibus optio mollitia! In quas ratione minus, eveniet voluptatum quae facilis placeat necessitatibus delectus quasi provident aliquid voluptas eaque doloribus dolorum ea sint. Perferendis reprehenderit facere dolorem eos aut fuga ea error itaque? Ab numquam culpa consectetur ullam, quasi exercitationem molestias architecto similique, nihil obcaecati reiciendis vero tenetur rem voluptas perspiciatis eos ipsum laudantium quas inventore velit temporibus consequuntur fugiat neque quae. Blanditiis delectus repudiandae temporibus fuga sed repellendus est commodi, similique id deleniti libero, voluptate laboriosam excepturi, a praesentium expedita inventore molestiae aperiam corporis sit facilis! Quia harum unde praesentium alias similique id tempora repellat amet, minus magnam non fugit molestias odio repudiandae.</p>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div id="spinner" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Spinner</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">Spinners require two classes, 'spinner-border' or 'spinner-grow', you can then colour them by using the 'text-x' classes and add 'spinner-border-sm' or 'spinner-grow-sm' onto the spinner classes to make them smaller.</p>
+                            <p class="lead">spinner-border</p>
+                            <div class="spinner-border"></div>
+                            <br>
+                            <br>
+                            <p class="lead">spinner-grow</p>
+                            <div class="spinner-grow"></div>
+                            <br>
+                            <br>
+                            <p class="lead">spinner-border spinner-border-sm</p>
+                            <div class="spinner-border spinner-border-sm"></div>
+                            <br>
+                            <br>
+                            <p class="lead">spinner-grow spinner-grow-sm</p>
+                            <div class="spinner-grow spinner-grow-sm"></div>
+                            <br>
+                            <br>
+                            <p class="lead">spinner-border text-warning</p>
+                            <div class="spinner-border text-warning"></div>
+                            <br>
+                            <br>
+                            <p class="lead">spinner-grow text-danger</p>
+                            <div class="spinner-grow text-danger"></div>
+                            <br>
+                            <br>
+                            <p class="lead">spinner-border spinner-border-sm text-info</p>
+                            <div class="spinner-border spinner-border-sm text-info"></div>
+                            <br>
+                            <br>
+                            <p class="lead">spinner-grow spinner-grow-sm text-success</p>
+                            <div class="spinner-grow spinner-grow-sm text-success"></div>
+                        </div>
+                    </div>
+                    <div id="tables" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Tables</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">All bootstrap tables will need to have the class 'table', each other class will then be applied to the element it affects.</p>
+                            <p>Add class 'table-bordered' to the table element, class 'table-light' to the thead element, and class 'table-active' to the 'tr' element to make it the active row.</p>
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jane</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <th scope="row">3</th>
+                                        <td>table-active</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr class="table-primary">
+                                        <th scope="row">5</th>
+                                        <td>table-primary</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr class="table-secondary">
+                                        <th scope="row">6</th>
+                                        <td>table-secondary</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr class="table-success">
+                                        <th scope="row">7</th>
+                                        <td>table-success</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr class="table-info">
+                                        <th scope="row">8</th>
+                                        <td>table-info</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr class="table-warning">
+                                        <th scope="row">9</th>
+                                        <td>table-warning</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr class="table-danger">
+                                        <th scope="row">10</th>
+                                        <td>table-danger</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <th scope="row">11</th>
+                                        <td>table-light</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr class="table-dark">
+                                        <th scope="row">12</th>
+                                        <td>table-dark</td>
+                                        <td>null</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <p>Add class 'table-striped' to the table element and class 'table-dark' to the thead element.</p>
+                            <table class="table table-striped">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jane</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Jane</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <p>Add class 'table-borderless' to the table element.</p>
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jane</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <p>'table-hover'</p>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jane</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jane</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <p>'table-reflow'</p>
+                            <table class="table table-reflow">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jane</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <p>'table-sm'</p>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jane</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <p>'table-responsive'</p>
+                            <table class="table table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jane</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                        </div>
+                    </div>
+                    <div id="toasts" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Toasts</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">Like the popovers, there is a small amount of custom JavaScript required to make the toasts work correctly. There are four required classes to get a toast to work 'toast', 'show', 'toast-header' & 'toast-body'. Both 'toast' & 'show' go in the parent div, within them you have two sibling child elements with the 'toast-header' & 'toast-body' classes. You can optionally add the class 'fade' to the parent element to add the fading effect to the toast when it's dismissed.</p>
+                            <div class="toast fade show">
+                                <div class="toast-header">
+                                    <h3 class="mr-auto">toast-header</h3>
+                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+                                        <span>&times;</span>
+                                    </button>
+                                </div>
+                                <div class="toast-body">
+                                    <p>toast-body</p>
+                                    <p class="mb-0">custom JavaScript:</p>
+                                    <p>$('.toast').toast();</p>
+                                </div>
+                            </div>
+                            <div class="toast show">
+                                <div class="toast-header">
+                                    <h3 class="mr-auto">Without 'fade'</h3>
+                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+                                        <span>&times;</span>
+                                    </button>
+                                </div>
+                                <div class="toast-body">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda saepe laborum, corporis ratione non cumque.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tooltips" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Tooltips</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">The Tooltips are very similar to the popovers, they also have custom JavaScript and functionally act similarly, the main difference being that they work when just hovering over the button and by default the message disappears when you click off of the buttons.</p>
+                            <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="$(function(){
+                                $('[data-toggle=\'tooltip\']').tooltip();
+                            });">Custom JavaScript</button>
+                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title='You will need to swap data-toggle="popover" for data-toggle="tooltip", and swap content="..." with title="..."'>Differences between popups & tooltips</button>
+                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title='data-placement="top"'>Top</button>
+                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title='data-placement="right"'>Right</button>
+                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left" title='data-placement="left"'>Left</button>
+                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title='data-placement="bottom"'>Bottom</button>
+                        </div>
+                    </div>
+                    <div id="typography" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Typography</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">Different types of classes for typography.</p>
+                            <h1 class="display-1">Display 1</h1>
+                            <h1 class="display-2">Display 2</h1>
+                            <h1 class="display-3">Display 3</h1>
+                            <h1 class="display-4">Display 4</h1>
+                            <br>
+                            <p class="lead">lead - this has been used throughout this page for the explanatory introduction sentences for each segment.</p>
+                            <br>
+                            <div class="blockquote">
+                                <p>Blockquote - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis odit odio quaerat debitis quisquam error asperiores est eos ipsam dignissimos.</p>
+                                <footer class="blockquote-footer">blockquote-footer</footer>
+                            </div>
+                            <br>
+                            <ul class="list-unstyled">
+                                <li>list-unstyled</li>
+                                <li>This class unstyles and removes the bullet points from lists</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                            <br>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">list-inline for the unordered list element</li>
+                                <li class="list-inline-item">list-inline-item for the child elements</li>
+                                <li class="list-inline-item">Lorem ipsum dolor sit amet.</li>
+                                <li>Without the 'list-inline-item' class the item will not appear inline</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="borders" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Utility: Borders</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">The border classes use the structure 'border-x' to apply different border stylings to the element.</p>
+                            <span class="border">border</span>
+                            <br>
+                            <br>
+                            <span class="border-0">border-0</span>
+                            <span class="border border-top-0">border border-top-0</span>
+                            <span class="border border-right-0">border border-right-0</span>
+                            <span class="border border-bottom-0">border border-bottom-0</span>
+                            <span class="border border-left-0">border border-left-0</span>
+                            <br>
+                            <br>
+                            <span class="border border-primary">border border-primary</span>
+                            <span class="border border-secondary">border border-secondary</span>
+                            <span class="border border-success">border border-success</span>
+                            <span class="border border-info">border border-info</span>
+                            <span class="border border-warning">border border-warning</span>
+                            <span class="border border-danger">border border-danger</span>
+                            <span class="border border-light">border border-light</span>
+                            <span class="border border-dark">border border-dark</span>
+                            <span class="border border-white">border border-white</span>
+                            <br>
+                            <br>
+                            <span class="rounded bg-primary p-1">rounded</span>
+                            <span class="rounded-sm bg-secondary p-1">rounded-sm</span>
+                            <span class="rounded-lg bg-success p-1">rounded-lg</span>
+                            <span class="rounded-circle bg-info p-1">rounded-circle</span>
+                            <span class="rounded-0 bg-warning p-1">rounded-0</span>
+                            <span class="rounded-top bg-danger p-1">rounded-top</span>
+                            <span class="rounded-right bg-dark text-light p-1">rounded-right</span>
+                            <span class="rounded-bottom bg-primary p-1">rounded-bottom</span>
+                            <span class="rounded-left bg-secondary p-1">rouned-left</span>
+                        </div>
+                    </div>
+                    <div id="colours" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Utility: Colours</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">There are default colour classes that you can use by following the structure of 'bg-x' or 'text-x', the choices include 'primary', 'secondary', 'success', 'info', 'warning', 'danger', 'light', 'dark' & 'white'.</p>
+                            <p class="bg-primary">bg-primary</p>
+                            <p class="bg-secondary">bg-secondary</p>
+                            <p class="bg-success">bg-success</p>
+                            <p class="bg-info">bg-info</p>
+                            <p class="bg-warning">bg-warning</p>
+                            <p class="bg-danger">bg-danger</p>
+                            <p class="bg-light">bg-light</p>
+                            <p class="bg-dark text-light">bg-dark text-light</p>
+                            <p class="bg-light">bg-light</p>
+                            <br>
+                            <p class="text-primary">text-primary</p>
+                            <p class="text-secondary">text-secondary</p>
+                            <p class="text-success">text-success</p>
+                            <p class="text-info">text-info</p>
+                            <p class="text-warning">text-warning</p>
+                            <p class="text-danger">text-danger</p>
+                            <p class="text-light bg-dark">text-light bg-dark</p>
+                            <p class="text-dark">text-dark</p>
+                            <p class="text-white bg-dark">text-white bg-dark</p>
+                        </div>
+                    </div>
+                    <div id="display" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Utility: Display</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">These display classes allow you to control the display CSS property without the need for custom CSS. They follow the structure of 'd-y-x', 'y' being the screen size and 'x' being the display property.</p>
+                            <span class="d-block bg-primary">d-block</span>
+                            <span class="d-sm-block bg-primary">d-sm-block</span>
+                            <span class="d-md-block bg-primary">d-md-block</span>
+                            <span class="d-lg-block bg-primary">d-lg-block</span>
+                            <span class="d-xl-block bg-primary">d-xl-block</span>
+                            <br>
+                            <span class="d-flex bg-secondary">d-flex</span>
+                            <span class="d-sm-flex bg-secondary">d-sm-flex</span>
+                            <span class="d-md-flex bg-secondary">d-md-flex</span>
+                            <span class="d-lg-flex bg-secondary">d-lg-flex</span>
+                            <span class="d-xl-flex bg-secondary">d-xl-flex</span>
+                            <br>
+                            <span class="d-inline bg-success">d-inline</span>
+                            <span class="d-sm-inline bg-success">d-sm-inline</span>
+                            <span class="d-md-inline bg-success">d-md-inline</span>
+                            <span class="d-lg-inline bg-success">d-lg-inline</span>
+                            <span class="d-xl-inline bg-success">d-xl-inline</span>
+                            <br>
+                            <br>
+                            <span class="d-inline-block bg-info">d-inline-block</span>
+                            <span class="d-sm-inline-block bg-info">d-sm-inline-block</span>
+                            <span class="d-md-inline-block bg-info">d-md-inline-block</span>
+                            <span class="d-lg-inline-block bg-info">d-lg-inline-block</span>
+                            <span class="d-xl-inline-block bg-info">d-lg-inline-block</span>
+                            <br>
+                            <br>
+                            <span class="d-inline-flex bg-warning">d-inline-flex</span>
+                            <span class="d-sm-inline-flex bg-warning">d-sm-inline-flex</span>
+                            <span class="d-md-inline-flex bg-warning">d-md-inline-flex</span>
+                            <span class="d-lg-inline-flex bg-warning">d-lg-inline-flex</span>
+                            <span class="d-xl-inline-flex bg-warning">d-xl-inline-flex</span>
+                            <br>
+                            <br>
+                            <p>You can follow this same structure for the display: none property by using the classes 'd-none', 'd-sm-none', 'd-md-none', 'd-lg-none' & 'd-xl-none'.</p>
+                            <span class="d-sm-none bg-danger">d-sm-none</span>
+                            <span class="d-md-none bg-danger">d-md-none</span>
+                            <span class="d-lg-none bg-danger">d-lg-none</span>
+                            <span class="d-xl-none bg-danger">d-xl-none</span>
+                            <p>Resize the page to view the classes</p>
+                            <br>
+                            <span class="d-table bg-dark text-light">d-table</span>
+                            <span class="d-sm-table bg-dark text-light">d-sm-table</span>
+                            <span class="d-md-table bg-dark text-light">d-md-table</span>
+                            <span class="d-lg-table bg-dark text-light">d-lg-table</span>
+                            <span class="d-xl-table bg-dark text-light">d-xl-table</span>
+                            <br>
+                            <span class="d-table-cell bg-primary">d-table-cell</span>
+                            <span class="d-sm-table-cell bg-primary">d-sm-table-cell</span>
+                            <span class="d-md-table-cell bg-primary">d-md-table-cell</span>
+                            <span class="d-lg-table-cell bg-primary">d-lg-table-cell</span>
+                            <span class="d-xl-table-cell bg-primary">d-xl-table-cell</span>
+                            <br>
+                            <p>Ctrl + P to Print Preview</p>
+                            <span class="d-print-none bg-secondary">d-print-none</span>
+                            <span class="d-print-block bg-secondary">d-print-block</span>
+                            <span class="d-print-inline bg-secondary">d-print-inline</span>
+                            <span class="d-print-inline-block bg-secondary">d-print-inline-block</span>
+                        </div>
+                    </div>
+                    <div id="flexbox" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Utility: Flexbox</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">Every flexbox class in bootstrap comes with the screen size structure of 'flex-x-y' (except flex-fill), with 'x' being the screen size and 'y' being the flex property. But all flex classes (including flex-fill) requires the class 'd-flex'.</p>
+                            <div class="d-flex flex-column">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'flex-column'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex flex-column-reverse">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'flex-column-reverse'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex flex-row bg-light">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'flex-row'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex flex-row-reverse bg-light">
+                                <div class="p-2 bg-info border">Nest the items in a div wth the class 'flex-row-reverse'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex flex-nowrap bg-light">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'flex-nowrap'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                                <div class="p-2 bg-success border">change the screen size to see the difference</div>
+                            </div>
+                            <br>
+                            <div class="d-flex flex-wrap bg-light">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'flex-wrap'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                                <div class="p-2 bg-success border">change the screen size to see the difference</div>
+                            </div>
+                            <br>
+                            <div class="d-flex flex-wrap-reverse bg-light">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'flex-wrap-reverse'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                                <div class="p-2 bg-success border">change the screen size to see the difference</div>
+                            </div>
+                            <br>
+                            <p>flex-fill. There's no screen size variations with this class like there is with the others.</p>
+                            <div class="d-flex text-light">
+                                <div class="p-2 flex-fill bg-primary">Give each item the class 'flex-fill'</div>
+                                <div class="p-2 flex-fill bg-dark">Flex Item 2</div>
+                                <div class="p-2 flex-fill bg-primary">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex text-light">
+                                <div class="p-2 flex-grow-1 bg-danger">Give each item that you want to grow the class 'flex-grow-1'</div>
+                                <div class="p-2 bg-info">Item 2</div>
+                                <div class="p-2 bg-info">Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex text-light">
+                                <div class="p-2 flex-grow-0 bg-info">Add the class 'flex-grow-0' to any elements you don't want to grow</div>
+                                <div class="p-2 bg-danger">Item 2</div>
+                                <div class="p-2 bg-danger">Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex text-light">
+                                <div class="p-2 flex-shrink-1 bg-danger">Give each item that you want to shrink the class 'flex-shrink-1'</div>
+                                <div class="p-2 bg-info">Item 2</div>
+                                <div class="p-2 bg-info">Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex text-light">
+                                <div class="p-2 flex-shrink-0 bg-info">Add the class 'flex-shrink-0' to any elements you don't want to shrink</div>
+                                <div class="p-2 bg-danger">Item 2</div>
+                                <div class="p-2 bg-danger">Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-start bg-light">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'justify-content-start'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-end bg-light">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'justify-content-end'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-center bg-light">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'justify-content-center'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-between bg-light">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'justify-content-between'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-around bg-light">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'justify-content-around'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex flex-wrap align-content-start bg-light" style="height: 100px">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'align-content-start'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex flex-wrap align-content-end bg-light" style="height: 100px">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'align-content-end'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex flex-wrap align-content-center bg-light" style="height: 100px">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'align-content-center'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex flex-wrap align-content-around bg-light" style="height: 100px">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'align-content-around'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex flex-wrap align-content-stretch bg-light" style="height: 100px">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'align-content-stretch'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex align-items-start bg-light" style="height: 100px">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'align-items-start'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex align-items-end bg-light" style="height: 100px">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'align-items-end'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex align-items-center bg-light" style="height: 100px">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'align-items-center'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex align-items-baseline bg-light" style="height: 100px">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'align-items-baseline'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex align-items-stretch bg-light" style="height: 100px">
+                                <div class="p-2 bg-info border">Nest the items in a div with the class 'align-items-stretch'</div>
+                                <div class="p-2 bg-info border">Flex Item 2</div>
+                                <div class="p-2 bg-info border">Flex Item 3</div>
+                            </div>
+                            <br>
+                            <div class="d-flex bg-light" style="height: 200px">
+                                <div class="p-2 bg-info border">Apply the following classes to the individual item instead of the parent div</div>
+                                <div class="p-2 bg-info border align-self-start">align-self-start</div>
+                                <div class="p-2 bg-info border align-self-end">align-self-end</div>
+                                <div class="p-2 bg-info border align-self-center">align-self-center</div>
+                                <div class="p-2 bg-info border align-self-baseline">align-self-baseline</div>
+                                <div class="p-2 bg-info border align-self-stretch">align-self-stretch</div>
+                            </div>
+                            <br>
+                            <div class="d-flex flex-nowrap bg-light">
+                                <div class="p-2 bg-info border">Add the class templaye 'order-n' to each item to control the layout</div>
+                                <div class="p-2 bg-info border order-3">Item 1</div>
+                                <div class="p-2 bg-info border order-2">Item 2</div>
+                                <div class="p-2 bg-info border order-1">Item 3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="misc" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Utility: Miscellaneous</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">Miscellaneous classes.</p>
+                            <div class="alert pl-0">
+                                <button class="toast-head close" data-target="#close-text" data-dismiss="alert">&times;</button>
+                                <p id="close-text">Add class 'close' to a button to apply the styling for a close button</p>
+                            </div>
+                            <p>Nest a iframe tag within a div with the class 'embed-responsive' & 'embed-responsive-x' (x can be '21by9', '16by9', '4by3' or '1by1') to make the video width responsive. You can also add the class 'embed-responsive-item' to the iframe itself but this isn't required.</p>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9cKsq14Kfsw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <br>
+                            <p class="p-3 shadow">shadow</p>
+                            <p class="p-3 shadow-sm">shadow-sm</p>
+                            <p class="p-3 shadow-lg">shadow-lg</p>
+                            <br>
+                            <p class="p-3 visble">visible (add class 'invisible' for the opposite affect)</p>
+                            <p class="p-3">Add class 'sr-only' to elements so that it can only be read by screen readers.</p>
+                            <p class="p-3 sr-only">The class 'sr-only' makes an element only readable by screen readers.</p>
+                            <p class="p-3">Add class 'sr-only-focusable' to elements so that it can only be read by screen readers and will re-read the element when it is in focus.</p>
+                            <p class="p-3 sr-only">The class 'sr-only-focusable' makes an element only readable by screen readers and will re-read the element when it is in focus.</p>
+                            <br>
+                            <a href="#misc" class="stretched-link">stretched-link</a>
+                        </div>
+                    </div>
+                    <div id="positioning" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Utility: Positioning</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">The positioning classes are various miscellaneous classes related to positioning.</p>
+                            <span class="align-baseline">align-baseline </span>
+                            <span class="align-top">align-top </span>
+                            <span class="align-middle">align-middle </span>
+                            <span class="align-bottom">align-bottom </span>
+                            <span class="align-text-top">align-text-top </span>
+                            <span class="align-text-bottom">align-text-bottom </span>
+                            <br>
+                            <br>
+                            <p class="clearfix">Use class 'clearfix' to clear the floats by adding it to the parent element.</p>
+                            <p class="float-none">float-none</p>
+                            <p class="float-left">float-left</p>
+                            <p class="float-right">float-right</p>
+                            <br>
+                        </div>
+                    </div>
+                    <div id="sizing" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Utility: Sizing</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">The sizing classes use the class structure and layout of 'y-x', with 'y' being the sizing property and 'x' being the size.</p>
+                            <p class="p-2 bg-info w-25">w-25</p>
+                            <p class="p-2 bg-info w-50">w-50</p>
+                            <p class="p-2 bg-info w-75">w-75</p>
+                            <p class="p-2 bg-info w-100">w-100</p>
+                            <br>
+                            <div class="bg-light border w-25" style="height: 100px">
+                                <p class="p-2 d-inline-block bg-info h-25">h-25</p>
+                                <p class="p-2 d-inline-block bg-info h-50">h-50</p>
+                                <p class="p-2 d-inline-block bg-info h-75">h-75</p>
+                                <p class="p-2 d-inline-block bg-info h-100">h-100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="spacing" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Utility: Spacing</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">The spacing classes allow you to easily and quickly add margins and paddings to an element using classes, they use the structure 'xo-n', with 'x' being either the padding or margin, 'o' being the optional choice to select which side to add it on, and 'n' being how much space to add - ranging from 1 to 5 to auto.</p>
+                            <br>
+                            <div class="bg-info d-inline p-0">p-0</div>
+                            <div class="bg-info d-inline p-1">p-1</div>
+                            <div class="bg-info d-inline p-2">p-2</div>
+                            <div class="bg-info d-inline p-3">p-3</div>
+                            <div class="bg-info d-inline p-4">p-4</div>
+                            <div class="bg-info d-inline p-5">p-5</div>
+                            <div class="bg-info d-inline p-auto">p-auto</div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="bg-info d-inline pt-0">pt-0</div>
+                            <div class="bg-info d-inline pt-1">pt-1</div>
+                            <div class="bg-info d-inline pr-1">pr-1</div>
+                            <div class="bg-info d-inline pb-1">pb-1</div>
+                            <div class="bg-info d-inline pl-1">pl-1</div>
+                            <div class="bg-info d-inline px-1">px-1</div>
+                            <div class="bg-info d-inline py-1">py-1</div>
+                            <br>
+                            <br>
+                            <div class="bg-light border d-inline">
+                                <div class="bg-info d-inline mr-0">mr-0</div>
+                                <div class="bg-info d-inline mr-auto">mr-auto</div>
+                                <div class="bg-info d-inline mr-1">mr-1</div>
+                                <div class="bg-info d-inline mr-2">mr-2</div>
+                                <div class="bg-info d-inline mr-3">mr-3</div>
+                                <div class="bg-info d-inline mr-4">mr-4</div>
+                                <div class="bg-info d-inline mr-5">mr-5</div>
+                            </div>
+                            <br>
+                            <div class="bg-light border d-inline">
+                                <div class="bg-info d-inline mx-5">mx-5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="text" class="col-lg-12 border rounded p-0 mb-5">
+                        <h1 class="w-100 bg-dark text-light rounded-top p-3">Utility: Text</h1>
+                        <div class="p-3">
+                            <p class="lead mb-4">There are different text classes that can be applied to text to change its appearance.</p>
+                            <p class="font-weight-bold">font-weight-bold</p>
+                            <p class="font-weight-light">font-weight-light</p>
+                            <p class="font-weight-normal">font-weight-normal</p>
+                            <a href="#text">Standard Link</a>
+                            <br>
+                            <a href="#text" class="text-decoration-none">text-decoration-none</a>
+                            <p class="font-italic">font-italic</p>
+                            <p class="text-monospace">text-monospace</p>
+                            <p class="text-justify">text-justify</p>
+                            <p class="text-nowrap">text-nowrap</p>
+                            <br>
+                            <p class="text-left">text-left</p>
+                            <p class="text-sm-left">text-sm-left</p>
+                            <p class="text-md-left">text-md-left</p>
+                            <p class="text-lg-left">text-lg-left</p>
+                            <p class="text-xl-left">text-xl-left</p>
+                            <br>
+                            <p class="text-right">text-right</p>
+                            <p class="text-sm-right">text-sm-right</p>
+                            <p class="text-md-right">text-md-right</p>
+                            <p class="text-lg-right">text-lg-right</p>
+                            <p class="text-xl-right">text-xl-right</p>
+                            <br>
+                            <p class="text-center">text-center</p>
+                            <p class="text-sm-center">text-sm-center</p>
+                            <p class="text-md-center">text-md-center</p>
+                            <p class="text-lg-center">text-lg-center</p>
+                            <p class="text-xl-center">text-xl-center</p>
+                            <br>
+                            <p class="text-lowercase">text-lowercase</p>
+                            <p class="text-uppercase">text-uppercase</p>
+                            <p class="text-capitalize">text-capitalize</p>
+                            <p class="text-truncate">text-truncate</p>
+                            <p class="text-body">text-body</p>
+                            <p class="text-black-50">text-black-50</p>
+                            <p class="text-white-50 bg-dark">text-white-50</p>
+                            <p class="text-muted">text-muted</p>
+                            <p class="text-break">text-break text-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-breaktext-break</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="bootstrap.js"></script>
+</html>
